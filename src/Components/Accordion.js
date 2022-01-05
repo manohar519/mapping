@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Grid from '@mui/material/Grid';
-//import Autocomplete from '@mui/material/Autocomplete';
+
 import { Link } from "react-router-dom";
 
 
@@ -12,19 +12,12 @@ export default function Accordion() {
     const handleChange = (event) => {
         setAge(event.target.value);
     };
-    const top100Films = [
-        { title: 'The Shawshank Redemption', year: 1994 },
-        { title: 'The Godfather', year: 1972 },
-        { title: 'The Godfather: Part II', year: 1974 },
-        { title: 'The Dark Knight', year: 2008 },
-        { title: '12 Angry Men', year: 1957 },
-        { title: "Schindler's List", year: 1993 },
-        { title: 'Pulp Fiction', year: 1994 }]
+    
     return (
         <Grid container spacing={6}>
             <Grid item xs={2}>
 
-                <FormControl fullWidth>
+                <FormControl fullWidth >
                     <InputLabel id="demo-simple-select-label">Age</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"
@@ -115,7 +108,7 @@ export default function Accordion() {
                 </FormControl>
             </Grid>
             <Grid item xs={1}>
-                <Button variant='outlined'><Link to='/tab' underline='none' >Search</Link>
+                <Button variant='outlined'><Link to='/tab' underline='none'style={{ textDecoration: 'none' }} >Search</Link>
                     
                     </Button>
                

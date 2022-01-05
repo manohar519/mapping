@@ -1,16 +1,10 @@
 
 import './App.css';
-import Appbar from './Components/Appbar';
-//import Dropdown from './Components/Dropdown';
-import Accordion from './Components/Accordion';
-import Tabbar from './Components/Tabbar'
 import { Routes, Route } from 'react-router-dom';
 import About from './Components/About';
 import Faq from './Components/Faq';
 import Trading from './Components/Trading';
-//import Mapp from './Components/Mapp';
 import Main from './Components/Main';
-import Tabbar1 from './Components/Tabbar1';
 import ResponsiveAppBar from './Components/Appbar';
 import Main1 from './Components/Main1';
 

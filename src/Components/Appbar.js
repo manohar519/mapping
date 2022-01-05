@@ -23,31 +23,25 @@ const Appbar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
 
-          <Link to='/' underline='none' color='inherit' >HOME</Link>
+
 
 
           <Typography
-            variant="h6"
+            variant="h5"
+
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-          >
-           
-              <Typography
-              variant="h5"
-              noWrap
-              component="div"
-              color="lightgoldenrodyellow"
-              sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-            > <Link to='/' ></Link>HOME</Typography>
-          </Typography>
+            color="inherit"
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+          > <Link to='/' style={{ color: '#FFF', textDecoration: 'none' }}> HOME </Link></Typography>
+
           <Typography
             variant="h6"
             color="inherit"
-            noWrap
+
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <Link to='/about' underline='none' >About</Link>
+            <Link to='/about' style={{ color: '#FFF', textDecoration: 'none' }} >About</Link>
           </Typography>
           <Typography
             variant="h6"
@@ -55,7 +49,7 @@ const Appbar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <Link to='/faq' underline='none' >FAQs</Link>
+            <Link to='/faq' underline='none' style={{ color: '#FFF', textDecoration: 'none' }} >FAQs</Link>
 
           </Typography>
           <Typography
@@ -64,7 +58,7 @@ const Appbar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <Link to='/trade' underline='none' >Trading</Link>
+            <Link to='/trade' underline='none' style={{ color: '#FFF', textDecoration: 'none' }} >Trading</Link>
 
           </Typography>
 

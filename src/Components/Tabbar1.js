@@ -79,17 +79,17 @@ export default function Tabbar1() {
         </Box>
       </Grid>
       <Grid item xs={10}>
-      <Box
-      sx={{
-        width: 900,
-        height: 500,
-        backgroundColor: 'primary.green',
-        '&:hover': {
-          backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7],
-        },
-      }}
-    />
+        <Box
+          sx={{
+            width: 900,
+            height: 500,
+            backgroundColor: 'primary.green',
+            '&:hover': {
+              backgroundColor: 'primary.main',
+              opacity: [0.9, 0.8, 0.7],
+            },
+          }}
+        />
       </Grid>
     </Grid>
   );

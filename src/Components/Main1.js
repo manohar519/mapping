@@ -1,7 +1,5 @@
 import React from "react";
 import SimpleAccordion from "./Accordion";
-import ResponsiveAppBar from "./Appbar";
-import BasicTabs from "./Tabbar";
 import Tabbar1 from "./Tabbar1";
 
 
