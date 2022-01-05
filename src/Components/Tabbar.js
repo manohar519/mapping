@@ -1,59 +1,37 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
-import Typography from '@mui/material/Typography';
+import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import { Grid } from '@mui/material';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 
+const Item = styled(Paper)(({ theme }) => ({
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
+export default function Tabbar() {
   return (
-    <div
-      role="tabpanel"
-      hidden={value !== index}
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
-    </div>
-  );
-}
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
-
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
-}
-
-export default function BasicTabs() {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  return (
-    <Grid container spacing={2} columns={2}>
-      <Grid item xs={6}>
-
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2} columns={16}>
+        <Grid item xs={6}>
+          
+        </Grid>
+        <Grid item xs={10}>
+        <Box
+      sx={{
+        width: 900,
+        height: 500,
+        backgroundColor: 'primary.green',
+        '&:hover': {
+          backgroundColor: 'primary.main',
+          opacity: [0.9, 0.8, 0.7],
+        },
+      }}
+    />
+        </Grid>
       </Grid>
-      <Grid item xs={8} backgroundcolor="grey">
-
-        
-      </Grid>
-    </Grid>
+    </Box>
   );
 }

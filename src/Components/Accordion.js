@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 import { MenuItem, FormControl, InputLabel, Select, Stack, TextField, Button } from '@mui/material';
-export default function SimpleAccordion() {
+export default function Accordion() {
     const [age, setAge] = React.useState('');
 
     const handleChange = (event) => {

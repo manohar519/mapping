@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import List from '../List';
 import { Grid } from '@mui/material';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -78,18 +78,18 @@ export default function Tabbar1() {
           </TabPanel>
         </Box>
       </Grid>
-      <Grid item xs={8}>
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[11.505, -0.099999]}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>
+      <Grid item xs={10}>
+      <Box
+      sx={{
+        width: 900,
+        height: 500,
+        backgroundColor: 'primary.green',
+        '&:hover': {
+          backgroundColor: 'primary.main',
+          opacity: [0.9, 0.8, 0.7],
+        },
+      }}
+    />
       </Grid>
     </Grid>
   );
